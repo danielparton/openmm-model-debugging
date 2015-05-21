@@ -1,0 +1,18 @@
+datestamp: 2015-05-20 03:00:49 UTC
+exception: !!python/object/apply:exceptions.Exception
+- 'Error downloading array posq: Invalid error code (700)'
+finished: true
+gpuid: '0'
+hostname: gpu-1-9.local
+mpi_rank: 0
+openmm_platform: CUDA
+sim_length: 100 ps
+successful: false
+timing: 0:1:39
+traceback: !!python/object/new:ensembler.core.literal_str
+- "Traceback (most recent call last):\n  File \"/cbio/jclab/home/parton/opt/anaconda/lib/python2.7/site-packages/ensembler-0.2-py2.7.egg/ensembler/refinement.py\",
+  line 1018, in refine_explicit_md\n    simulate_explicit_md()\n  File \"/cbio/jclab/home/parton/opt/anaconda/lib/python2.7/site-packages/ensembler-0.2-py2.7.egg/ensembler/refinement.py\",
+  line 879, in simulate_explicit_md\n    integrator.step(nsteps_per_iteration)\n  File
+  \"/cbio/jclab/home/parton/opt/anaconda/lib/python2.7/site-packages/simtk/openmm/openmm.py\",
+  line 12102, in step\n    return _openmm.LangevinIntegrator_step(self, *args)\nException:
+  Error downloading array posq: Invalid error code (700)\n"

@@ -1,0 +1,7 @@
+datestamp: 2015-05-20 03:21:37 UTC
+finished: false
+gpuid: '0'
+hostname: gpu-1-9.local
+mpi_rank: 0
+openmm_platform: CUDA
+sim_length: 100 ps
