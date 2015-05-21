@@ -2,9 +2,9 @@ For investigating explicit solvent MD simulation failures for protein kinase mod
 
 Model directories, containing serialized system, state and integrator xml files:
 * `hanging` - model failed simulation by hanging with no further output
-* `error-downloading-array-posq` - model failed simulation Exception message `Error downloading array posq: Invalid error code (700)`
+* `error-downloading-array-posq` - model failed simulation with Exception message `Error downloading array posq: Invalid error code (700)`
 
-Protein models were generated using Modeller, then refined with 100 ps implicit solvent MD simulation, solvated, and subjected to energy minimzation. The serialized system, state and integrator files stored here were output at the start of the subsequent explicit solvent MD simulation (after EM, before MD). The original explicit solvent MD simulations were performed using the CUDA platform on GTX 680s.
+Protein models were generated using Modeller, then refined with 100 ps implicit solvent MD simulation, solvated, and subjected to energy minimzation. The serialized system, state and integrator files stored here were output at the start of the subsequent explicit solvent MD simulation (after EM, before velocity assignment and MD). The original explicit solvent MD simulations were performed using the CUDA platform on GTX 680s.
 
 The model directories also contain model IDs and logfiles (`explicit-log.yaml` and `explicit-energies.txt`) from the original failed MD simulations, performed using Ensembler. 
 
